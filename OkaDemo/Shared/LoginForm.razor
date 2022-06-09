@@ -1,0 +1,10 @@
+﻿<AuthorizeView>
+    <Authorized>
+        <a href="#">@context.User.Identity.Name</a>
+        <a href="logout">Logout</a>
+    </Authorized>
+
+    <NotAuthorized>
+        <a href=@($"Login?returnUrl={ReturnUrl}")>Log In</a>  
+    </NotAuthorized>
+</AuthorizeView>
